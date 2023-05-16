@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* 공통 클래스 */
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    width: 1300px;
+    height: 1130px;
+    margin: 0 auto;
+    /* background-color: bisque; */
+}
+
+/* left 영역 */
+.left{
+    width: 20%;
+    height: 1130px;
+    /* background-color: aqua; */
+    float: left;
+}
+.logo{
+    width: 100%;
+    height: 10%;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.logo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 90%;
+    /* background-color: brown; */
+}
+.menu ul{
+    float: right;
+    margin: 50px 0;
+}
+.mainmenu > ul > li{
+    margin-top: 20px;
+    color: black;
+    padding-right: 40px;
+}
+.mainmenu > ul > li:hover{
+    background-color: rgb(219, 219, 219);
+    font-weight: bolder;
+}
+.mainmenu > ul > li > a{
+    color: black;
+}
+
+/* right 영역 */
+.right{
+    width: 80%;
+    height: 1230px;
+    float: left;
+    /* background-color: aquamarine; */
+    padding-left: 10px;
+}
+
+/* R-slide */
+.slide{
+    width: 100%;
+    height: 620px;
+    /* background-color: chartreuse; */
+    background: url(../images/Untitled-1.gif) no-repeat;
+    background-size: cover;
+}
+
+/* R-contents */
+.contents{
+    width: 100%;
+    height: 400px;
+    /* background-color: crimson; */
+    font-size: 13px;
+    margin-top: 20px;
+}
+.title{
+    width: 100%;
+    height: 40px;
+    margin: 30px 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.contents .c1{
+    width: calc(100% / 3);
+    height: 300px;
+    /* background-color: cyan; */
+    float: left;
+    margin: 0 auto;
+}
+.c1:hover img{
+    transform: scale(1.1);
+}
+.contents .c2{
+    width: calc(100% / 3);
+    height: 300px;
+    /* background-color: rgb(79, 145, 145); */
+    float: left;
+}
+.c2:hover img{
+    transform: scale(1.1);
+}
+.contents .c3{
+    width: calc(100% / 3);
+    height: 300px;
+    /* background-color: rgb(143, 167, 167); */
+    float: left;
+}
+.c3:hover img{
+    transform: scale(1.1);
+}
+.contents img{
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.2s linear;
+}
+.contents p{
+    margin-left: 20px;
+    text-align: left;
+    /* background-color: blue; */
+}
+/* R-footer 영역 */
+.footer{
+    width: 100%;
+    height: 160px;
+    margin-top: 30px;
+    /* background-color: darkgreen; */
+}
+.f-logo{
+    width: 25%;
+    height: 160px;
+    /* background-color: rgb(90, 63, 30); */
+    float: left;
+    position: relative;
+}
+.f-logo img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.f-menu{
+    width: 75%;
+    height: 65px;
+    /* background-color: rgb(136, 106, 163); */
+    float: left;
+}
+.f-menu ul{
+    margin: 20px auto;
+    float: right;
+}
+.f-menu li{
+    display: inline-block;
+    border-right: 1px solid rgb(197, 194, 194);
+    padding: 0 20px;
+}
+.f-menu > nav > ul > li > a{
+    color: black;
+}
+.f-menu li:last-child{
+    border: none;
+}
+.f-menu > nav > ul > li:hover{
+    font-weight: bolder;
+}
+.link{
+    width: 75%;
+    height: 65px;
+    /* background-color: darkcyan; */
+    float: left;
+    font-size: 10px;
+    padding-left: 20px;
+    text-align: right;
+    margin-top: 20px;
+    color: gray;
+}
